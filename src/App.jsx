@@ -124,7 +124,7 @@ const App = () => {
               <div className='text-6xl'>{icon}</div>
               <div>
                 <div className='text-2xl font-semibold'>{data.name}, {data.sys.country}</div>
-                <div>{date.getUTCDate() + 1}/{date.getUTCMonth() + 1}/{date.getUTCFullYear()}</div>
+                <div>{date.getUTCDate()}/{date.getUTCMonth() + 1}/{date.getUTCFullYear()}</div>
               </div>
             </div>
             {/* Card Body */}
