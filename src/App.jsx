@@ -106,10 +106,10 @@ const App = () => {
           {`${errorMsg.response.data.message}`}!
         </div>
       )}
-      <form className={`${animate ? 'animate-shake' : 'animate-none'} h-16 bg-black/20 w-full max-w-[480px] rounded-full backdrop-blur-xl mb-8`}>
+      <form className={`${animate ? 'animate-shake' : 'animate-none'} h-12 bg-black/20 w-full max-w-[480px] rounded-full backdrop-blur-xl mb-4`}>
         <div className='h-full relative flex items-center justify-between px-6'>
-          <input onChange={(e) => handleSearch(e)} className='flex-1 bg-transparent py-3 outline-none text-white font-light' type="text" placeholder='Search Country ...' />
-          <button onClick={(e) => handleSubmit(e)} className='text-xl text-white/70'><IoMdSearch /></button>
+          <input onChange={(e) => handleSearch(e)} className='flex-1 bg-transparent py-2 bg-red-500 outline-none text-white font-light text-sm' type="text" placeholder='Search Country ...' />
+          <button onClick={(e) => handleSubmit(e)} className='text-xl text-white/80'><IoMdSearch /></button>
         </div>
       </form>
       <div className='w-full max-w-[450px] bg-black/20 min-h-[584px] text-white backdrop-blur-xl rounded-2xl py-10 px-6'>
